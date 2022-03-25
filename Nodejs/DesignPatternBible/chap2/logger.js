@@ -1,3 +1,23 @@
+
+
+// p63
+class Logger {
+  constructor(name) {
+    this.count = 0
+    this.name = name
+  }
+
+  log(message)  {
+    this.count++
+    console.log(`[` + this.name + `] ` + message)
+  }
+
+}
+
+// export instance
+module.exports = new Logger('DEFAULT')
+
+
 /*
 module.exports = (message) => {
   console.log(`info: ${message}`)
@@ -29,19 +49,3 @@ class Logger {
 module.exports = Logger
 */
 
-// p63
-class Logger {
-  constructor(name) {
-    this.count = 0
-    this.name = name
-  }
-
-  log(message)  {
-    this.count++
-    console.log(`[` + this.name + `] ` + message)
-  }
-
-}
-
-// export instance
-module.exports = new Logger('DEFAULT')
